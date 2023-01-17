@@ -1,0 +1,6 @@
+-inrc c:\Users\User\Desktop\ee433 eben\cvibuild.image-func\Release64\resources.in.rc
+-outrc c:\Users\User\Desktop\ee433 eben\cvibuild.image-func\Release64\resources.out.rc
+-inhdef c:\Users\User\Desktop\ee433 eben\cvibuild.image-func\Release64\image-func.h.hdefs
+-outdef c:\Users\User\Desktop\ee433 eben\cvibuild.image-func\Release64\image-func.dll.defs
+-indefprot c:\Users\User\Desktop\ee433 eben\cvibuild.image-func\Release64\image-func.obj.cvidefprots
+-dllName image-func.dll

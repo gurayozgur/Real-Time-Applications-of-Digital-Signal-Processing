@@ -1,0 +1,54 @@
+HDRS = 	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2020\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2020\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include\\clang\\3.3"
+	"C:\\Program Files\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files\\IVI Foundation\\VISA\\win64\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2020\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "image-func.c" = "c:\\Users\\User\\Desktop\\ee433 eben" ;
+LOCATE on "image-func.h" = "c:\\Users\\User\\Desktop\\ee433 eben" ;
+Object "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.obj" : "c:\\Users\\User\\Desktop\\ee433 eben\\image-func.c" ;
+FILENUM on "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.obj" = 1 ;
+DEFPROTS on "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.obj" = "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.obj" = "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.obj.out" ;
+PrjObjects += "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.obj" ;
+Object "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.h.hdefs" : "c:\\Users\\User\\Desktop\\ee433 eben\\image-func.h" ;
+FILENUM on "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.h.hdefs" = 2 ;
+OUTFILE on "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.h.hdefs" = "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.h.hdefs.out" ;
+PreLinkInputs += "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\resources.in.rc" ;
+PreLinkInputs += $(PrjObjects) $(InstrObjects) ;
+PreLinkOutputs += "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\resources.out.rc" ;
+PreLinkOutputs += "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.dll.defs" ;
+PreLink $(PreLinkOutputs) : $(PreLinkInputs) ;
+Depends "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.dll" : "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.dll.defs" ;
+Object "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\resources.res" : "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\resources.out.rc" ;
+Depends "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\resources.res" : $(PreLinkOutputs) ;
+Depends "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\resources.res" "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\resources.out.rc" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\resources.res" : "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\manifest.xml" ;
+MainFromObjects "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.dll" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.dll" : "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\link_options.txt" ;
+Depends "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.dll" : "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\dependencies.lnk.in" ;
+Depends "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.dll" : "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\resources.res" ;
+Depends all : "c:\\Users\\User\\Desktop\\ee433 eben\\cvibuild.image-func\\Release64\\image-func.dll" ;

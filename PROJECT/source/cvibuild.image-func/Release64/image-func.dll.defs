@@ -1,0 +1,5 @@
+LIBRARY image-func
+
+EXPORTS
+gray2rgb
+rgb2gray

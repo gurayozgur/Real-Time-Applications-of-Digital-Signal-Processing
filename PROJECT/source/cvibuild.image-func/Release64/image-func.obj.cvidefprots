@@ -1,0 +1,10 @@
+[rgb2gray]
+Class="Function"
+Prototype="void rgb2gray(int *src, int total);"
+SourceLocation="c:\Users\User\Desktop\ee433 eben\image-func.c:4:6"
+
+[gray2rgb]
+Class="Function"
+Prototype="void gray2rgb(int *src, int total, float *colormap);"
+SourceLocation="c:\Users\User\Desktop\ee433 eben\image-func.c:16:6"
+

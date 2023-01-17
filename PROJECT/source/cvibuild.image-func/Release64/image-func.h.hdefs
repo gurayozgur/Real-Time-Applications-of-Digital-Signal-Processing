@@ -1,0 +1,8 @@
+[rgb2gray]
+Class="Function"
+Prototype="void rgb2gray(int *src, int total);"
+
+[gray2rgb]
+Class="Function"
+Prototype="void gray2rgb(int *src, int total, float *colormap);"
+
