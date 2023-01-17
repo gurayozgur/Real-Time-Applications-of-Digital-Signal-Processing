@@ -1,4 +1,4 @@
-# Real-time Applications of Digital Signal Processing
+# Real-Time Applications of Digital Signal Processing
 
 ## Course Description: 
 This course teaches the theory and practice of signal processing on real world problems.
